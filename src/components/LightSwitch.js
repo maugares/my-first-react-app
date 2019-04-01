@@ -5,14 +5,15 @@ export default class LightSwitch extends Component {
 
   toggle = () => {
     this.setState({
-      active: !this.state.active;
-    }
+      active: !this.state.active
+    })
   }
 
 
   render() {
     return <div>
       <p> The light switch is <b>{this.state.active ? 'on' : 'off'}</b></p>
+      <button onClick={this.toggle}>Toggle</button>
     </div>
   }
 }
