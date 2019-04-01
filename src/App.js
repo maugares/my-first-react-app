@@ -5,6 +5,8 @@ import './App.css';
 import Title from './components/Title' ;
 // Import the component LightSwitch
 import LightSwitch from './components/LightSwitch';
+// Import the component User
+import User from './components/User';
 
 class App extends Component {
   render() {
@@ -16,6 +18,11 @@ class App extends Component {
         </header>
 
         <main>
+          {/* Add Users */}
+          <User name="Olivier" />
+          <User name="Mauro" />
+          <User name="Vivial" />
+          <User name="Albert" />
           {/* Use the component Title */}
           <Title content="Some Simple Title" />
           {/* Call the component LightSwitch */}
